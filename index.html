@@ -1,6 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<h1>Special Form</h1>
+  <div id="container">
+    <header>
+      <h1 id="title" class="text-center">Dorcami Survey Form</h1>
+      <p id="description" class="text-center">Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label id="age-label" for="number">Age <span class="small">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+      </div>
+
+      <div class="form-group">
+        <label id="dropdown-label" for="dropdown">Which option best describes your current role?
+        </label>
+        <select id="dropdown" class="form-control" required>
+          <option selected disabled value="default">Please select a value</option>
+          <option value="football">Football</option>
+          <option value="basketball">Basketball</option>
+          <option value="tennis">Tennis</option>
+          <option value="ping-pong">Ping-pong</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>How have you heard of us?
+        </p>
+        <label>
+          <input value="facebook" type="radio" name="social" class="radio-form" />Facebook
+        </label>
+        <label>
+          <input value="linkedin" type="radio" name="social" class="radio-form" />Linkedin
+        </label>
+        <label>
+          <input value="twitter" type="radio" name="social" class="radio-form" />Twitter
+        </label>
+        <label>
+          <input value="other" type="radio" name="social" class="radio-form" />Other
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>Do you play an instrument? <span class="small">(check all that apply)</span>
+        </p>
+        <label>
+          <input value="guitar" type="checkbox" name="music" class="music-form" />Guitar
+        </label>
+        <label>
+          <input value="piano" type="checkbox" name="music" class="music-form" />Piano
+        </label>
+        <label>
+          <input value="drums" type="checkbox" name="music" class="music-form" />Drums
+        </label>
+        <label>
+          <input value="bass" type="checkbox" name="music" class="music-form" />Bass
+        </label>
+        <label>
+          <input value="violin" type="checkbox" name="music" class="music-form" />Violin
+        </label>
+        <label>
+          <input value="other" type="checkbox" name="music" class="music-form" />Other
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments?</p>
+        <textarea name="comments" id="comments" placeholder="Enter your comments here..." class="text-form"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="button-form" id="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
 </body>
+
 </html>
